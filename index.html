@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>wrdGuessr</title>
     <link rel="stylesheet" href="./styles/index.css">
   </head>
   <body>
-    <div class="topBar">
-      <h1 class="topBarScaler">‎ </h1>
-      <button class="topBarButton" href="./index.html">Home</button>
-    </div>
+    <img src="./public/logo.png">
     <div class="wordDiv">
-      <img src="./public/logo.png" width="100%" height="100%" class="logo">
-      <h1 class="hintText" id="wordhint">Hint: Hint goes here!</h1>
-      <input class="wordGuess" id="guess" placeholder="Type your guess here">
-      <button class="submitButton" onclick="guess()">Guess</button>
+      <h1 class="wordDivSpacer"></h1>
+      <h1>Guess the word with the hint below!</h1>
+      <h1 id="wordhint">Hint: Generating hint...</h1>
+      <input class="guessInput" id="guess">
+      <h1 class="wordDivSpacer"></h1>
+      <h1 class="wordDivSpacer"></h1>
+      <button class="guessSubmit" onclick="guess()">Guess</button>
+      <h1 class="wordDivSpacer"></h1>
+      <h1 class="wordDivSpacer"></h1>
+      <h1 class="wordDivSpacer"></h1>
     </div>
     <div class="feedback-box" id="feedbackBox">Incorrect</div>
     <script src="./src/index.js"></script>
