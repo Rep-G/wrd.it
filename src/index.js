@@ -35,6 +35,7 @@ async function getRandomWord() {
 
         document.querySelector('#wordhint').textContent = `Hint: ${hint}`;
         theWord = randomWord.toLowerCase();
+        console.log(theWord);
         return randomWord.toLowerCase();
     } catch (error) {
         throw new Error(`Error while fetching random word: ${error.message}`);
