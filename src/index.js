@@ -33,7 +33,7 @@ async function getRandomWord() {
             hint = definitions[randomIndex].definition;
         }
 
-        document.querySelector('#wordhint').textContent = `Hint: ${hint}`;
+        document.querySelector('#wordhint').textContent = `hint: ${hint.toLowerCase()}`;
         theWord = randomWord.toLowerCase();
         console.log(theWord);
         return randomWord.toLowerCase();
